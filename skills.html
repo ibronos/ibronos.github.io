@@ -50,16 +50,12 @@ window.onload = function () {
 				text: "Framework Skills"
 			},
 			data: [{
-					type: "pie",
-					startAngle: 45,
-					showInLegend: "true",
-					legendText: "{label}",
-					indexLabel: "{label} ({y})",
-					yValueFormatString:"#,##0.#"%"",
-					dataPoints: [
-						{ label: "Codeigniter", y: 30 },
-						{ label: "Wordpress", y: 70 }
-					]
+				type: "column",
+				dataPoints: [
+					{ label: "Wordpress",  y: 90  },
+					{ label: "Codeigniter", y: 70  },
+					{ label: "Laravel",  y: 65  }
+				]
 			}]
 		};
 		$("#chartContainerFr").CanvasJSChart(optionsFr);
@@ -72,7 +68,7 @@ window.onload = function () {
 
 <style type="text/css">
 	.canvasjs-chart-credit {
-		display: none;
+		display: none !important;
 	}
 </style>
 
